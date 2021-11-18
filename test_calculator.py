@@ -21,3 +21,8 @@ class CalculatorTest(unittest.TestCase):
         calculator = self.calculator
         res = calculator.multiply(10, 3)
         self.assertEqual(30, res)
+
+    def test_division_operator(self):
+        calculator = self.calculator
+        res = calculator.divide(20, 5)
+        self.assertEqual(4, res)
