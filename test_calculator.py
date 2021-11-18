@@ -16,3 +16,8 @@ class CalculatorTest(unittest.TestCase):
         calculator = self.calculator
         res = calculator.subtract(4, 2)
         self.assertEqual(2, res)
+
+    def test_multiplication_operator(self):
+        calculator = self.calculator
+        res = calculator.multiply(10, 3)
+        self.assertEqual(30, res)
