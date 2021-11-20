@@ -38,3 +38,8 @@ class CalculatorTest(unittest.TestCase):
         self.assertEqual(3, res)
         res = calculator.average(3, 2)
         self.assertEqual(2, res)
+
+    def test_power_operator(self):
+        calculator = self.calculator
+        res = calculator.power(3, 4)
+        self.assertEqual(81, res)
