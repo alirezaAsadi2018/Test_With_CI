@@ -27,6 +27,11 @@ class CalculatorTest(unittest.TestCase):
         res = calculator.divide(20, 5)
         self.assertEqual(4, res)
 
+    def test_minimum_operator(self):
+        calculator = self.calculator
+        res = calculator.minimum(30, 20)
+        self.assertEqual(20, res)
+
     def test_average_operator(self):
         calculator = self.calculator
         res = calculator.average(2, 4)
