@@ -31,3 +31,10 @@ class CalculatorTest(unittest.TestCase):
         calculator = self.calculator
         res = calculator.minimum(30, 20)
         self.assertEqual(20, res)
+
+    def test_average_operator(self):
+        calculator = self.calculator
+        res = calculator.average(2, 4)
+        self.assertEqual(3, res)
+        res = calculator.average(3, 2)
+        self.assertEqual(2, res)
