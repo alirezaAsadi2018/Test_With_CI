@@ -12,4 +12,4 @@ class Calculator:
         return op1 // op2
 
     def minimum(self, op1, op2):
-        return min(op1,op2)
+        return min(op1, op2)
