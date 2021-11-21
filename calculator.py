@@ -26,4 +26,4 @@ class Calculator:
     def factorial(self, op):
         if op == 0:
             return 1
-        return op * factorial(op - 1)
+        return op * self.factorial(op - 1)
