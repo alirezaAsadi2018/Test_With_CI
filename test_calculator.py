@@ -43,3 +43,8 @@ class CalculatorTest(unittest.TestCase):
         calculator = self.calculator
         res = calculator.power(3, 4)
         self.assertEqual(81, res)
+
+    def test_factorial_operator(self):
+        calculator = self.calculator
+        self.assertEqual(1, calculator.factorial(0))
+        self.assertEqual(3628800, calculator.factorial(10))

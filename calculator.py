@@ -22,3 +22,8 @@ class Calculator:
 
     def max(self, op1, op2):
         return max(op1,op2)
+
+    def factorial(self, op):
+        if op == 0:
+            return 1
+        return op * self.factorial(op - 1)
