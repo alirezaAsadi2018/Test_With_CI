@@ -1,3 +1,5 @@
+import math
+
 class Calculator:
     def add(self, op1, op2):
         return op1 + op2
@@ -27,3 +29,6 @@ class Calculator:
         if op == 0:
             return 1
         return op * self.factorial(op - 1)
+
+    def ceil(self, op):
+        return math.ceil(op)
