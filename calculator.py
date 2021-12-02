@@ -27,3 +27,6 @@ class Calculator:
         if op == 0:
             return 1
         return op * self.factorial(op - 1)
+
+    def mod(self, op1, op2):
+        return op1 % op2
