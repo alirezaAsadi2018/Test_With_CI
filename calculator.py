@@ -1,3 +1,5 @@
+import math 
+
 class Calculator:
     def add(self, op1, op2):
         return op1 + op2
@@ -33,4 +35,6 @@ class Calculator:
         
     def square(self, op):
         return sqrt(op)
-
+      
+    def floor(self, op1):
+        return math.floor(op1)
