@@ -44,7 +44,29 @@ class CalculatorTest(unittest.TestCase):
         res = calculator.power(3, 4)
         self.assertEqual(81, res)
 
+    def test_factorial_operator(self):
+        calculator = self.calculator
+        self.assertEqual(1, calculator.factorial(0))
+        self.assertEqual(3628800, calculator.factorial(10))
+
+    def test_mod_operator(self):
+        calculator = self.calculator
+        res = calculator.mod(10, 3)
+        self.assertEqual(1, res)
+
+    def test_square_operator(self):
+        calculator = self.calculator
+        res = calculator.square(9)
+        self.assertEqual(3, res)
+        res = calculator.square(25)
+        self.assertEqual(5, res)
+
+    def test_floor_operator(self):
+        calculator = self.calculator
+        res = calculator.floor(3.14)
+        self.assertEqual(3, res)
+
     def test_xor_operator(self):
         calculator = self.calculator
-        res = calculator.xor(0, 1)
+        res = calculator.floor(1, 0)
         self.assertEqual(1, res)
