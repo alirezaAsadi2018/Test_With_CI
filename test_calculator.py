@@ -48,7 +48,7 @@ class CalculatorTest(unittest.TestCase):
         calculator = self.calculator
         self.assertEqual(1, calculator.factorial(0))
         self.assertEqual(3628800, calculator.factorial(10))
-
+        
     def test_mod_operator(self):
         calculator = self.calculator
         res = calculator.mod(10, 3)
@@ -70,3 +70,10 @@ class CalculatorTest(unittest.TestCase):
         calculator = self.calculator
         res = calculator.xor(1, 0)
         self.assertEqual(1, res)
+        
+    def test_ceil_operator(self):
+        calculator = self.calculator
+        self.assertEqual(4, calculator.ceil(3.56))
+        self.assertEqual(1, calculator.ceil(0.2))
+        self.assertEqual(9001, calculator.ceil(9000.1))
+        self.assertEqual(10, calculator.ceil(9.9))
