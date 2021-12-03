@@ -1,3 +1,5 @@
+import math 
+
 class Calculator:
     def add(self, op1, op2):
         return op1 + op2
@@ -30,3 +32,6 @@ class Calculator:
 
     def mod(self, op1, op2):
         return op1 % op2
+    
+    def floor(self, op1):
+        return math.floor(op1)
