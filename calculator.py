@@ -34,7 +34,7 @@ class Calculator:
         return op1 % op2
         
     def square(self, op):
-        return sqrt(op)
+        return math.sqrt(op)
       
     def floor(self, op1):
         return math.floor(op1)
