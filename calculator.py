@@ -44,3 +44,6 @@ class Calculator:
 
     def xor(self, op1, op2):
         return op1 ^ op2
+
+    def abs(self, op):
+        return abs(op)
