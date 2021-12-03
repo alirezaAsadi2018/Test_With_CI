@@ -1,4 +1,4 @@
-import math 
+import math
 
 class Calculator:
     def add(self, op1, op2):
