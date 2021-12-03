@@ -46,4 +46,4 @@ class Calculator:
         return op1 ^ op2
 
     def abs(self, op):
-        return math.abs(op)
+        return abs(op)
