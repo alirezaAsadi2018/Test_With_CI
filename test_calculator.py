@@ -51,6 +51,27 @@ class CalculatorTest(unittest.TestCase):
 
     def test_ceil_operator(self):
         calculator = self.calculator
+        
+    def test_mod_operator(self):
+        calculator = self.calculator
+        res = calculator.mod(10, 3)
+        self.assertEqual(1, res)
+        
+    def test_square_operator(self):
+        calculator = self.calculator
+        res = calculator.square(9)
+        self.assertEqual(3, res)
+        res = calculator.square(25)
+        self.assertEqual(5, res)
+    
+    def test_floor_operator(self):
+        calculator = self.calculator
+        res = calculator.floor(3.14)
+        self.assertEqual(3, res)
+        
+    def test_ceil_operator(self):
+        calculator = self.calculator
+        self.assertEqual(4, calculator.ceil(3.56))
         self.assertEqual(1, calculator.ceil(0.2))
         self.assertEqual(9001, calculator.ceil(9000.1))
         self.assertEqual(10, calculator.ceil(9.9))

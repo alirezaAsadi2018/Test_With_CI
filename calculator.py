@@ -30,5 +30,14 @@ class Calculator:
             return 1
         return op * self.factorial(op - 1)
 
-    def ceil(self, op):
-        return math.ceil(op)
+    def mod(self, op1, op2):
+        return op1 % op2
+
+    def square(self, op):
+        return math.sqrt(op)
+      
+    def floor(self, op1):
+        return math.floor(op1)
+    
+    def ceil(self, op1):
+        return math.ceil(op1)
