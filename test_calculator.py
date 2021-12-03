@@ -53,3 +53,8 @@ class CalculatorTest(unittest.TestCase):
         calculator = self.calculator
         res = calculator.mod(10, 3)
         self.assertEqual(1, res)
+    
+    def test_floor_operator(self):
+        calculator = self.calculator
+        res = calculator.floor(3.14)
+        self.assertEqual(3, res)
