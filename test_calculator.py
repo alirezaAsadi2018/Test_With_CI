@@ -68,5 +68,5 @@ class CalculatorTest(unittest.TestCase):
 
     def test_xor_operator(self):
         calculator = self.calculator
-        res = calculator.floor(1, 0)
+        res = calculator.xor(1, 0)
         self.assertEqual(1, res)
