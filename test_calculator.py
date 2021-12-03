@@ -43,3 +43,8 @@ class CalculatorTest(unittest.TestCase):
         calculator = self.calculator
         res = calculator.power(3, 4)
         self.assertEqual(81, res)
+
+    def test_xor_operator(self):
+        calculator = self.calculator
+        res = calculator.xor(0, 1)
+        self.assertEqual(1, res)
