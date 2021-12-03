@@ -77,3 +77,11 @@ class CalculatorTest(unittest.TestCase):
         self.assertEqual(1, calculator.ceil(0.2))
         self.assertEqual(9001, calculator.ceil(9000.1))
         self.assertEqual(10, calculator.ceil(9.9))
+
+    def test_abs_operator(self):
+        calculator = self.calculator
+        self.assertEqual(3, calculator.abs(-3))
+        self.assertEqual(3, calculator.abs(3))
+        self.assertEqual(123, calculator.abs(123))
+        self.assertEqual(333, calculator.abs(-333))
+        self.assertEqual(0, calculator.abs(0))
