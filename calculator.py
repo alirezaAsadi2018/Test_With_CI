@@ -20,5 +20,5 @@ class Calculator:
     def power(self, op1, op2):
         return op1 ** op2
 
-    def power(self, op1, op2):
+    def xor(self, op1, op2):
         return op1 ^ op2
