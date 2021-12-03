@@ -65,3 +65,9 @@ class CalculatorTest(unittest.TestCase):
         calculator = self.calculator
         res = calculator.floor(3.14)
         self.assertEqual(3, res)
+        
+    def test_ceil_operator(self):
+        calculator = self.calculator
+        res = calculator.ceil(3.56)
+        self.assertEqual(4, res)
+

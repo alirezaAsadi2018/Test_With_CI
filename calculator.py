@@ -32,9 +32,12 @@ class Calculator:
 
     def mod(self, op1, op2):
         return op1 % op2
-        
+
     def square(self, op):
         return math.sqrt(op)
       
     def floor(self, op1):
         return math.floor(op1)
+    
+    def ceil(self, op1):
+        return math.ceil(op1)
