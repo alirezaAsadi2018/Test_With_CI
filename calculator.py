@@ -15,7 +15,7 @@ class Calculator:
 
     def minimum(self, op1, op2):
         return min(op1, op2)
-    
+
     def average(self, op1, op2):
         return (op1 + op2) // 2
 
@@ -23,7 +23,7 @@ class Calculator:
         return op1 ** op2
 
     def max(self, op1, op2):
-        return max(op1,op2)
+        return max(op1, op2)
 
     def factorial(self, op):
         if op == 0:
@@ -35,9 +35,12 @@ class Calculator:
 
     def square(self, op):
         return math.sqrt(op)
-      
+
     def floor(self, op1):
         return math.floor(op1)
     
-    def ceil(self, op1):
-        return math.ceil(op1)
+    def ceil(self, op):
+        return math.ceil(op)
+
+    def xor(self, op1, op2):
+        return op1 ^ op2
