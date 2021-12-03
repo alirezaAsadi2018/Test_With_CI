@@ -30,3 +30,7 @@ class Calculator:
 
     def mod(self, op1, op2):
         return op1 % op2
+        
+    def square(self, op):
+        return sqrt(op)
+
