@@ -38,6 +38,9 @@ class Calculator:
 
     def floor(self, op1):
         return math.floor(op1)
+    
+    def ceil(self, op):
+        return math.ceil(op)
 
     def xor(self, op1, op2):
         return op1 ^ op2
